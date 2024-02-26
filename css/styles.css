@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Set background color for the website */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Container styles */
+.container {
+    width: 80%; /* Set width of the page */
+    margin: 0 auto; /* Center the page */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark background color */
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 20px; /* Add bottom margin */
+    border-radius: 10px; /* Rounded borders */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+}
+
+/* Navigation styles */
+nav {
+    text-align: center; /* Center text */
+    padding: 10px; /* Add padding */
+}
+
+nav a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add margins between links */
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff; /* Add bottom border on hover */
+}
+
+/* Main content styles */
+main {
+    display: block; /* Ensure block display */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add bottom margin */
+    border-radius: 10px; /* Rounded borders */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 24px; /* Adjust font size for all headings */
+}
+
+h1 {
+    color: #007bff; /* Change color of heading */
+}
+
+/* List item styles */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin-bottom: 5px; /* Add bottom margin to list items */
+}
+
+/* Footer styles */
+footer {
+    font-size: 14px; /* Reduce font size */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add top margin */
+}
