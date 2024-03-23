@@ -1,0 +1,213 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Container styles */
+.container {
+    width: 80%; /* Set width of the page */
+    margin: 0 auto; /* Center the page */
+}
+
+/* Header styles */
+header {
+    /* background-color: #2a4c4e; Dark background color */
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 20px; /* Add bottom margin */ 
+    border-radius: 10px; /* Rounded borders
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+    height: 80%;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #4fa1ee; /* Set your desired background color */
+    border-radius: 10px;
+    display: flexbox;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Increase the margin for more spacing between links */
+    font-weight: bold; /* Add some emphasis to the links */
+    
+}
+
+nav a:hover {
+    color: rgb(37, 65, 66);
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tablet nav{
+      display: none;
+    }
+  }
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add bottom margin */
+    border-radius: 10px; /* Rounded borders */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+article {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto;
+}
+aside {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #f1e0a6;
+    color: #5291fe;
+    box-shadow: 5px 5px 8px #000;
+    border-radius: 0 15px;
+}
+
+.frame {
+    opacity: 0.9;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+h1 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 5px;
+    color: #170064;
+    margin-bottom: 1%;
+    font-weight: bolder;
+}
+h2 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #170064;
+    margin-bottom: 2%;
+}
+h3 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #170064;
+    margin-bottom: 2%;
+}
+section {
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 8px 8px 8px #170064;
+    border-radius: 45px;
+    border: 2px solid #170064;
+}
+.team {
+    width: 80%;
+    border-radius: 40px;
+    border: 5px solid #170064;
+    box-shadow: 5px 5px 8px #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    font-style: italic;
+    color: #000;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+main p {
+    text-align: center;
+}
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: rgb(188, 214, 240);
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+
+  /* Footer styles */
+footer {
+    font-size: 14px; /* Reduce font size */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add top margin */
+}
